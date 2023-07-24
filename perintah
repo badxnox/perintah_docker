@@ -40,3 +40,23 @@ Membersihkan Semua Citra, Kontainer, Volume, dan Jaringan yang Tak Digunakan ata
 Untuk melihat statistik container, misalnya penggunaan CPU, penggunaan memori, dan lainnya, ketik command:
 
 # docker stats
+
+Jalankan konfigurasi.
+
+# docker-compose up -d    
+
+Docker akan download images yang dibutuhkan dari Docker Hub, kemudian membuat Network, Volume, dan Container.
+
+Shutdown dan Cleanup
+
+Untuk menghentikan dan menghapus container dan network digunakan command down.
+
+# docker-compose down    
+
+Untuk menghapus container, network, dan volumenya (file wordpress dan database) tambahkan opsi –volumes.
+
+# docker-compose down --volumes    
+
+Untuk masuk ke kontainer 
+
+# docker exec -it container bash
