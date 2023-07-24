@@ -1,0 +1,42 @@
+PERINTAH DOCKER
+
+# docker images
+
+Melihat container yg jalan
+# docker ps
+
+Melihat container yg pernah kita jalanin
+# docker ps -a
+
+Menjalankan docker
+# docker run -it ID/Repository
+
+Stop docker 
+# docker container stop ID
+atau 
+exit
+
+cara menghapus docker images
+# docker rmi -f portainer/portainer
+hanya menambahkan opsi -f untuk menghapus base image :
+
+jalnkan docker
+# docker container start ID
+
+cek network
+# docker network list
+
+buat docker network
+# docker network create --driver bridge --subnet 172.18.1.0/24 network-test
+# docker network create --driver bridge --subnet 10.10.10.0/24 network-test
+# docker network create --driver bridge --subnet 30.30.30.0/24 docker1
+
+nama network > network-test
+
+Membersihkan Semua Citra, Kontainer, Volume, dan Jaringan yang Tak Digunakan atau Menggantung
+
+# docker system prune
+
+Untuk melihat statistik container, misalnya penggunaan CPU, penggunaan memori, dan lainnya, ketik command:
+
+# docker stats
